@@ -11,12 +11,12 @@ import org.springframework.web.bind.annotation.RestController;
 public class Es1Controller {
 
 	@GetMapping("/{lang}")
-	public String getMessage(@PathVariable String l) {
+	public String getMessage(@PathVariable String lang) {
 
-		if (l.equals("IT")) {
+		if (lang.equals("IT")) {
 			return "Ciao, mondo!";
 
-		} else if (l.equals("EN")) {
+		} else if (lang.equals("EN")) {
 			return "Hello World";
 
 		} else {
